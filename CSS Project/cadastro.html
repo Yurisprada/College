@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>ATP - Desenvolvimento Web</title>
+        <link rel="stylesheet" href="../ATP/css/normalize.css"/>
+        <link rel="stylesheet" href="../ATP/css/style.css"/>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="linha">
+                <header>
+                        <div class="coluna col4">
+                            <h1 class="logo"><a href="index.html">ATP</a></h1>
+                        </div>
+                        <div class="coluna col8">
+                            <nav>
+                                <ul class = "menu inline sem marcador">
+                                    <li><a href="cliente.html">Area do Cliente</a></li>
+                                    <li><a href="caditem.html">Cadastrar item</a></li>
+                                    <li><a href="config.html">Configuraçoes</a></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                </header>
+            </div>
+        </div>
+        <div class = cadastro>
+            <form name ="cadastro" method = "post" action = "../ATP/php/dadoscadastro.php">
+                <table>
+                    <tr>
+                        <td><label>Nome Completo:</label></td>
+                        <td><input type = "text" name = "nomeCompleto" size = "30"> </td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Data de Nascimento:</label></td>
+                        <td><input type = "date" name = "dataNascimento"> </td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Endereço:</label></td>
+                        <td><input type="text" name = "endereco"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Nome de usuario:</label></td>
+                        <td><input type="text" name="username" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email: </label></td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Senha:</label></td>
+                        <td><input type="password" name="senha" size="20"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label >Confirme a senha:</label></td>
+                        <td><input type="password" name="confirmaSenha" size="20"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class = "botao">
+                            <input type="submit" name="enviar" value="Enviar">
+                            <input type="reset" name="limpar" value="Limpar">
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        <footer class="fixo">
+            <div class="sair"></div>
+                <a href="index.html" >Voltar</a></button>
+            <h3>ATP - Desenvolvimento Web</h3>
+        </footer>
+    </body>
+</html>
